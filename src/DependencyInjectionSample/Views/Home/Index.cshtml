@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h1>Transient</h1>
+        <p>@ViewBag.Transient.OperationId</p>
+        <h1>Scoped</h1>
+        <p>@ViewBag.Scoped.OperationId</p>
+        <h1>Singleton</h1>
+        <p>@ViewBag.Singleton.OperationId</p>
+        <h1>SingletonInstance</h1>
+        <p>@ViewBag.SingletonInstance.OperationId</p>
+    </div>
+    <div class="col-md-6">
+        <h1>TransientOperation</h1>
+        <p>@ViewBag.Service.TransientOperation.OperationId</p>
+        <h1>ScopedOperation</h1>
+        <p>@ViewBag.Service.ScopedOperation.OperationId</p>
+        <h1>SingletonOperation</h1>
+        <p>@ViewBag.Service.SingletonOperation.OperationId</p>
+        <h1>SingletonInstanceOperation</h1>
+        <p>@ViewBag.Service.SingletonInstanceOperation.OperationId</p>
+    </div>
+</div>
